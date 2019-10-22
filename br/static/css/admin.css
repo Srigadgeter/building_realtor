@@ -1,0 +1,70 @@
+#header {
+    height: 50px;
+    color: #fff;
+    background: #10284e;
+}
+
+#branding h1 {
+    color: #fff;
+}
+
+a:link,
+a:visited {
+    color: #10284e;
+}
+
+div.breadcrumbs {
+    color: #10284e;
+    background: #30caa0;
+}
+
+.paginator a.showall {
+    color: #6cdabc !important;
+}
+
+.paginator a.showall:focus, 
+.paginator a.showall:hover {
+    color: #50bca0 !important;
+}
+
+.button, 
+a.button, 
+input[type=submit], 
+input[type=button], 
+.submit-row input {
+    background: #6cdabc;
+}
+
+.module h2, 
+.button:focus, 
+.button:hover, 
+.button:active, 
+.module caption, 
+.inline-group h2,
+.paginator a:visited,
+.object-tools a:focus, 
+.object-tools a:hover, 
+input[type="submit"]:focus, 
+input[type="button"]:focus, 
+input[type="submit"]:hover, 
+input[type="button"]:hover, 
+input[type="submit"]:active, 
+input[type="button"]:active, 
+.paginator a:link:not(.showall) {
+    background: #50bca0 !important;
+}
+
+.button.default, 
+input[type=submit].default, 
+.submit-row input.default {
+    background: #29ac89;
+}
+
+.button.default:active, 
+.button.default:focus, 
+.button.default:hover, 
+input[type=submit].default:focus, 
+input[type=submit].default:hover,
+input[type=submit].default:active {
+    background: #27755d !important;
+}
