@@ -82,6 +82,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'HOST': 'localhost',
+        'PORT': '5433',  # Default Port is 5432
         'NAME': 'realtordb',
         'USER': 'postgres',
         'PASSWORD': 'postgres'
