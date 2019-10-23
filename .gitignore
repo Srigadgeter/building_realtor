@@ -12,3 +12,6 @@ __pycache__/
 
 # sqlite db file
 db.sqlite3
+
+# upload media folder & files
+media/
