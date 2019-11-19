@@ -2,6 +2,7 @@ from django.shortcuts import render, get_object_or_404
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 from .models import Listing
+from .choices import bedroom_choices, price_choices, state_choices
 
 
 def index(request):
@@ -22,11 +23,17 @@ def listing(request, listing_id):
     listing = get_object_or_404(Listing, pk=listing_id)
 
     context = {
-        'listing': listing,
-        'myrange': range(1, 6)
+        'listing': listing
     }
 
     return render(request, 'listings/listing.html', context)
 
 def search(request):
-    return render(request, 'listings/search.html')
+
+    context = {
+        'bedroom_choices': bedroom_choices,
+        'price_choices': price_choices,
+        'state_choices': state_choices
+    }
+
+    return render(request, 'listings/search.html', context)
